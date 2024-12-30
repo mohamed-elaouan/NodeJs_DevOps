@@ -1,5 +1,6 @@
 FROM node:latest
 WORKDIR /apps
 ADD . .
-CMD npm install 
-RUN npm run dev
+RUN npm install 
+//RUN npm run dev
+CMD node apps.js
