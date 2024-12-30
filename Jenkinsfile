@@ -9,9 +9,9 @@ pipeline {
         }
         stage("Test") {
             steps {
-                //bat 'npm install'
-                //bat 'npm run dev'
-                bat 'node -v'
+                bat 'npm install'
+                bat 'npm run dev'
+                //bat 'node -v'
             }
         }
         stage("Deploy") {
