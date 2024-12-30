@@ -1,0 +1,15 @@
+{
+  "name": "nodejs(ci-cd-pipeline)",
+  "version": "1.0.0",
+  "main": "apps.js",
+  "scripts": {
+    "dev": "node apps.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
