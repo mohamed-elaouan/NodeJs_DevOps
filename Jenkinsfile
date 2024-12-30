@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('chekout') {
+        stage('checkout) {
             steps {
-                chekout scm
+                checkout scm
             }
         }
         stage('Test') {
