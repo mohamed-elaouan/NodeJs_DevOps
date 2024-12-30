@@ -10,7 +10,7 @@ pipeline {
         stage("Test") {
             steps {
                 bat 'npm install'
-                bat 'npm run dev'
+                //bat 'npm run dev'
                 //bat 'node -v'
             }
         }
