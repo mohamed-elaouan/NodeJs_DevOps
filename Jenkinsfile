@@ -19,7 +19,7 @@ pipeline {
         }
         stage("Push Docker Image") {
             steps {
-                bat "echo 'arrived'"
+                // bat "echo 'arrived'"
                 withCredentials([usernamePassword(credentialsId: 'docker_cred', passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')]) {
                     bat 'docker login -u %DOCKERHUB_USERNAME% -p %DOCKERHUB_PASSWORD%'
                     bat 'docker tag mohamedelaouan/my_node_app:v1.0 mohamedelaouan/node_project:1.0'
