@@ -20,7 +20,7 @@ pipeline {
                 bat 'docker build -t mohamedelaouan/my_node_app:v1.0 .'
             }
         }
-        stages {
+        
         stage('Build and Push Docker Image') {
             steps {
                 // Securely inject Docker Hub credentials
@@ -39,18 +39,6 @@ pipeline {
                 }
             }
         }
-    }
-        // stage("Push Docker Image") {
-        //     steps {
-        //         // bat "echo 'arrived'"
-        //         withCredentials([usernamePassword(credentialsId: 'docker_cred', passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')]) {
-        //             bat 'docker login -u %DOCKERHUB_USERNAME% -p %DOCKERHUB_PASSWORD%'
-        //             bat 'docker tag mohamedelaouan/my_node_app:v1.0 mohamedelaouan/node_project:1.0'
-        //             bat 'docker push mohamedelaouan/node_project:1.0'
-        //             bat 'docker logout'
-        //         }
-        //     }
-        // }
     }
 }
 
