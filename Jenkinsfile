@@ -2,18 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout) {
+        stage("checkout") {
             steps {
                 checkout scm
             }
         }
-        stage('Test') {
+        stage("Test") {
             steps {
                 sh 'sudo npm install'
                 sh 'sudo npm run dev '
             }
         }
-        stage('Deploy') {
+        stage("Deploy") {
             steps {
                 echo 'Deploying...'
                 // Add your deploy steps here
