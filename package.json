@@ -1,5 +1,6 @@
 {
   "name": "nodejs(ci-cd-pipeline)",
+  "type": "module",
   "version": "1.0.0",
   "main": "apps.js",
   "scripts": {
