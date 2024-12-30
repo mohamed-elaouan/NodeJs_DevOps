@@ -20,5 +20,10 @@ pipeline {
                 // Add your deploy steps here
             }
         }
+        stage("Build the Image in Docker"){
+            steps{
+                bat 'docker build -t my_node_app:v1.0'
+            }
+        }
     }
 }
