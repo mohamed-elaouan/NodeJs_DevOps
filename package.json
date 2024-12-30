@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "apps.js",
   "scripts": {
-    "dev": "node apps.js"
+    "dev": "node apps.js",
+    "build": "echo 'Running Build script'" 
   },
   "keywords": [],
   "author": "",
