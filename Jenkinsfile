@@ -17,11 +17,7 @@ pipeline {
                 sh 'docker build -t mohamedelaouan/my_node_app:v1.0 .'
             }
         }
-        stage("Build Docker Image") {
-            steps {
-                sh 'docker build -t mohamedelaouan/my_node_app:v1.0 .'
-            }
-        }
+        
         
     }
 }
