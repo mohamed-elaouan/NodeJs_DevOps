@@ -25,11 +25,7 @@ pipeline {
                 sh 'docker build -t mohamedelaouan/my_node_app:v1.0 .'
             }
         }
-        stage("Execution le Container") {
-            steps {
-                sh 'docker container run -itd -p 5500:5500 --name mynodeApp mohamedelaouan/my_node_app:v1.0'
-            }
-        }
+        
         // stage('Build and Push Docker Image') {
         //     steps {
         //         // Securely inject Docker Hub credentials
