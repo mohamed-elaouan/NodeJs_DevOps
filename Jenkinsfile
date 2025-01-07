@@ -12,12 +12,12 @@ pipeline {
         }
         stage("Install Dependencies") {
             steps {
-                bat 'npm install'
+                sh 'npm install'
             }
         }
         stage("Build Docker Image") {
             steps {
-                bat 'docker build -t mohamedelaouan/my_node_app:v1.0 .'
+                sh 'docker build -t mohamedelaouan/my_node_app:v1.0 .'
             }
         }
         
